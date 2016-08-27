@@ -11,7 +11,7 @@ Getting up and running
 ## Build Dockerfile
 
 - Go to folder where Dockerfile located
-- `docker build -t [image_name]` .
+- `docker build -t [image_name] .`
 
 
 Deployment
