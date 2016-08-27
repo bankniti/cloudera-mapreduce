@@ -20,6 +20,11 @@ Deployment
 Run these commands in where Dockerfile located:
 - `docker run --hostname=quickstart.cloudera --privileged=true -it --rm -v $PWD:/usr/home/mapreduce [image_name] /usr/bin/docker-quickstart`
 
+Run mapReduce test
+--------------------
+
+- `cat test.txt | ./map.py | sort | ./reduce.py`
+
 
 Reference
 ------------
