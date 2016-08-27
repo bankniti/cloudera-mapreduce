@@ -1,0 +1,27 @@
+Tron is an decompressor for files packed with compressors like
+PKLITE or DIET. In case you don't know, such programs use different
+data compression routines to make a file smaller. Files which
+were compressed with one of these pack programs will still stay
+executable for the system but they will be much smaller. Another
+reason for compressing is that a second person has no chance
+to change any bytes inside a compressed program with a hex editor
+or something like that. But this feature has disadvantages, too.
+For example a virus scanner is not abble to detect a virus under
+the compression structure. And on some systems a decompression routine
+wastes a lot of time (8086 or lower, hehe).
+
+The first is the primary reason why we decided to write Tron.
+Tron itself is able to decompress most common packers as there are
+PKLITE, DIET, LZEXE, TINY, EXEPACK, PRO-PACK, COMPACK etc..
+
+Some of these compression programs have a build in EXPAND function!
+But for insiders it is no problem to trick this functions out!
+"Simply change the Header Signature "MZ" into "ZM" and the original
+programs cannot handle their own files any longer. The header signature
+can be found at the start of an EXE file!
+And this is only one of many known possibilities.
+
+To unpack TinyProg packed files you must register first.
+(READ REGISTER.TXT)
+Before running tronreg.exe make sure that the tron.exe file
+is not packed. After registering tron can be packed again.
